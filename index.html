@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="Login.html">
-    <p>
-    <input type="text" name="name" placeholder="Enter your name">
-    </p>
-    <p>
-    <input type="email" name="email" placeholder="Enter your email">
-    </p>
-    <p>
-    <input type="password" name="password" placeholder="Enter your passoword">
-    </p>
-    <p>
-        <input type="conformpassword" name="password" placeholder="Conform your password">
-    </p>
-    <p>
-        <input type="mobile" name="number" placeholder="Enter your mobile number" >
-    </p>
-   <label>
-        <input type="radio" name="gender" value="Male"  >Male
-        </label><br>
-        <label>
-        <input type="radio" name="gender" value="Female" >Female
-        </label><br>
-        <label>
-        <input type="radio" name="gender" value="Other" >Other
-        </label><br>
-    
-    <p>
-        <input type="file" name="uploadfile" >
-    </p>
-    <p>
-        <input type="submit" value="Registore">
-    </p>
-    </form>
 
+<div class="container">
+    <h2>Register</h2>
+
+    <form action="Login.html">
+
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Password</label>
+        <input type="password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" required>
+
+        <label>Gender</label>
+        <select required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Upload File</label>
+        <input type="file">
+
+        <button type="submit">Register</button>
+
+        <div class="small-text">
+            Already have an account? <a href="Login.html">Login</a>
+        </div>
+
+    </form>
+</div>
 
 </body>
 </html>
